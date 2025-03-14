@@ -1,0 +1,42 @@
+.banner {
+    // min-height: auto;
+    padding: 0;
+    @media screen and (max-width: 768px) {
+        min-height: 85vh;
+    }
+    .image {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .title {
+        position: absolute;
+        left: 8%;
+        top: 16%;
+        // translate: -50% -50%;
+        width: 45%;
+        // background: rgba(white, 0.7);
+        @media screen and (max-width: 768px) {
+            left: 8%;
+            top: 16%;
+            width: 85%;
+        }
+        h2 {
+            font-size: 3.5rem;
+            // text-align: center;
+            color: #05464c;
+            font-family: "Righteous";
+            @media screen and (max-width: 768px) {
+                font-size: 3rem;
+            }
+        }
+    }
+}

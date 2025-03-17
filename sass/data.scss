@@ -1,4 +1,16 @@
 .data {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+        border-bottom: 100px solid #f4ff87;
+    }
     .carx {
         position: absolute;
         bottom: 8%;

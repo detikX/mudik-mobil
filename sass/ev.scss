@@ -1,8 +1,14 @@
 .ev {
-    // background: linear-gradient(to bottom, $colorred, #7cc5cf);
+    background: linear-gradient(to bottom, #7cffb1 49%, #7cc5cf 33%);
     padding: 32px 0 0;
+    @media screen and (max-width: 768px) {
+        background: transparent;
+    }
     .bg-blue {
-        background: #7cc5cf;
+        // border-top: 3px solid #539199;
+        @media screen and (max-width: 768px) {
+            background: #7cc5cf;
+        }
     }
     .image {
         @media screen and (max-width: 768px) {

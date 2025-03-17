@@ -35,7 +35,7 @@ const zoomData = [
     { scale: 1, origin: [0.5, 0.5] },
     { scale: 2, origin: [0.8, 0.8] }, //ke lampu
     { scale: 1, origin: [0.5, 0.5] },
-    { scale: 2, origin: [0.4, 0.7] },
+    { scale: 2.5, origin: [.6, .4] },
     { scale: 1, origin: [0.5, 0.5] },
 ];
 

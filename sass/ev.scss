@@ -1,0 +1,23 @@
+.ev {
+    // background: linear-gradient(to bottom, $colorred, #7cc5cf);
+    padding: 32px 0 0;
+    .bg-blue {
+        background: #7cc5cf;
+    }
+    .image {
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            /* height: 50vh; */
+            scale: 1.5;
+            position: relative;
+            left: 24%;
+        }
+        img {
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}

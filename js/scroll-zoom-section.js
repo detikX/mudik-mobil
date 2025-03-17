@@ -31,7 +31,7 @@ const zoomData = [
     { scale: 1, origin: [0.5, 0.5] },
     { scale: 3.5, origin: [0.8, 1] }, // roda ban
     { scale: 1, origin: [0.5, 0.5] },
-    { scale: 2, origin: [0.8, 0.4] },
+    { scale: 2, origin: [0.8, 0.1] }, // baramg bawaan
     { scale: 1, origin: [0.5, 0.5] },
     { scale: 2, origin: [0.8, 0.8] }, //ke lampu
     { scale: 1, origin: [0.5, 0.5] },

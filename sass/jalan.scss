@@ -1,6 +1,9 @@
 .jalan {
     background: linear-gradient(to bottom, #7cc5cf, white);
     padding: 0;
+    @media screen and (max-width: 768px) {
+        min-height: 50vh;
+    }
     .image {
         position: absolute;
         inset: 0;

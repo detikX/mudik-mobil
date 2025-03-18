@@ -51,7 +51,7 @@
         }
     }
     .bagian {
-        height: 100vh;
+        min-height: 100vh;
     }
     &-judul {
         position: relative;
@@ -75,5 +75,11 @@
             font-family: "Righteous";
             font-size: 2.2rem;
         }
+    }
+}
+
+.min-bag {
+    @media screen and (max-width: 768px) {
+        min-height: 50vh !important;
     }
 }

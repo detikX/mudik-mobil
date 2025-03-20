@@ -1,0 +1,44 @@
+.daftar {
+    .wrap-detikx {
+        // margin-top: -70vh;
+    }
+    .image {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        // right: 27%;
+        // bottom: 8%;
+        // scale: 1.5;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .box-pom {
+        background: rgba($color: #fff, $alpha: 0.7);
+        padding: 16px;
+        border-radius: 16px;
+        width: fit-content;
+        // margin-bottom: 16px;
+        display: inline-block;
+        width: 46%;
+        margin: 8px;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            display: block;
+        }
+        td {
+            font-size: 1.1rem;
+            padding: 4px 8px;
+            &:last-child {
+                img {
+                    width: 60px;
+                }
+            }
+            // text-align: center;
+        }
+    }
+}

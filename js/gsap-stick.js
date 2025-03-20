@@ -31,11 +31,11 @@ gsap.timeline({
         y: innerHeight * 1,
         rotate: 360
     })
-    .from(".text1", {
-        x: innerWidth * 1
-    })
     .from(".text2", {
         x: innerWidth * -1
+    })
+    .from(".text1", {
+        x: innerWidth * 1
     })
     .from(".text3", {
         x: innerWidth * 1

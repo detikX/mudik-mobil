@@ -56,10 +56,12 @@
         td {
             // font-size: 1.1rem;
             padding: 4px 8px;
+            width: 50%;
             &:first-child {
                 font-weight: 600;
             }
             &:last-child {
+                width: 20%;
                 img {
                     width: 40px;
                 }

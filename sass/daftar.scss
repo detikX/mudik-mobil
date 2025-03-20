@@ -81,6 +81,10 @@
         display: inline-block;
         width: 80px;
         height: 80px;
+        @media screen and (max-width: 768px) {
+            width: 55px;
+            height: 55px;
+        }
         position: relative;
         &::before {
             content: "";
@@ -93,6 +97,10 @@
             background: #f6f6f6;
             border-radius: 50%;
             z-index: -1;
+            @media screen and (max-width: 768px) {
+                width: 65px;
+                height: 65px;
+            }
         }
         img {
             width: 100%;

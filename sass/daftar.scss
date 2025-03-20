@@ -1,6 +1,12 @@
 .daftar {
+    @media screen and (max-width: 768px) {
+        // padding: 32px 0 150px;
+    }
     .wrap-detikx {
-        // margin-top: -70vh;
+        margin-top: -85vh;
+        @media screen and (max-width: 768px) {
+            margin-top: -100vh;
+        }
     }
     .image {
         position: absolute;
@@ -18,27 +24,88 @@
         }
     }
     .box-pom {
-        background: rgba($color: #fff, $alpha: 0.7);
-        padding: 16px;
-        border-radius: 16px;
         width: fit-content;
         // margin-bottom: 16px;
         display: inline-block;
         width: 46%;
         margin: 8px;
+        .name {
+            // background: white;
+            background: #7ac143;
+            padding: 8px 16px;
+            border-radius: 16px 16px 0 0;
+            &.jkt {
+                background: #fb8c00 !important;
+            }
+            h4 {
+                margin-bottom: 0;
+                color: #f6f6f6;
+                font-weight: 600;
+            }
+        }
+        .bg-box {
+            border-radius: 0 0 16px 16px;
+            padding: 16px;
+            background: rgba($color: #fff, $alpha: 0.7);
+        }
+
         @media screen and (max-width: 768px) {
             width: 100%;
             display: block;
         }
         td {
-            font-size: 1.1rem;
+            // font-size: 1.1rem;
             padding: 4px 8px;
+            &:first-child {
+                font-weight: 600;
+            }
             &:last-child {
                 img {
-                    width: 60px;
+                    width: 40px;
                 }
             }
             // text-align: center;
         }
+    }
+
+    .keterangan {
+        // position: absolute;
+        // left: 50%;
+        // top: 50%;
+        // translate: -50% -50%;
+        .d-block {
+            margin-bottom: 16px;
+        }
+    }
+    .iconx {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 90px;
+            translate: -50% -50%;
+            height: 90px;
+            background: #f6f6f6;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .namex {
+        display: inline-block;
+        // margin-left: 8px;
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 1.3rem;
     }
 }

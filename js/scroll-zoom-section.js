@@ -37,6 +37,12 @@ const zoomData = [
     { scale: 1, origin: [0.5, 0.5] },
     { scale: 2.5, origin: [.6, .4] },
     { scale: 1, origin: [0.5, 0.5] },
+    { scale: 2.5, origin: [.6, .4] },
+    { scale: 1, origin: [0.5, 0.5] },
+    { scale: 2.5, origin: [.6, .4] },
+    { scale: 1, origin: [0.5, 0.5] },
+    { scale: 2.5, origin: [.6, .4] },
+    { scale: 1, origin: [0.5, 0.5] },
 ];
 
 // now loop through each section and create the ScrollTrigger accordingly.

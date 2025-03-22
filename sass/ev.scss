@@ -1,6 +1,6 @@
 .ev {
-    background: linear-gradient(to bottom, #f4ff87 35%, #7cc5cf 33%);
-    // padding: 32px 0 0;
+    background: linear-gradient(to bottom, #f4ff87 24%, #7cc5cf 24%);
+    padding: 32px 0 0;
     // background: #f4ff87;
     @media screen and (max-width: 768px) {
         background: #f4ff87;
@@ -37,23 +37,40 @@
             // width: 35%;
             width: fit-content;
             padding: 8px 16px;
-            background: white;
+            // background: white;
+            background: #dff3f7;
             display: block;
-            i {
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+            .hahaha {
                 display: inline-block;
                 width: 40px;
+                @media screen and (max-width: 768px) {
+                    width: 30px;
+                }
+            }
+            i {
                 font-size: 2rem;
             }
             .judulv {
                 display: inline-block;
+                @media screen and (max-width: 768px) {
+                    width: 85%;
+                    margin-left: 8px;
+                    vertical-align: top;
+                }
                 // width: 60%;
             }
         }
         .right-side {
             // display: inline-block;
             // width: 62%;
-            background: rgba($color: #fff, $alpha: 0.2);
+            // background: rgba($color: #fff, $alpha: 0.2);
+            // padding: 16px;
+            background: rgb(223 243 247);
             padding: 16px;
+            border-bottom: 3px solid #3f818f;
             p {
                 // margin-bottom: 0;
             }

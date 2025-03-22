@@ -3,16 +3,16 @@
         // padding: 32px 0 150px;
     }
     .wrap-detikx {
-        margin-top: -85vh;
+        // margin-top: -85vh;
         @media screen and (max-width: 768px) {
-            margin-top: -100vh;
+            // margin-top: -75vh;
         }
     }
     .image {
         position: absolute;
         width: 100%;
         right: 0;
-        bottom: 0;
+        bottom: 32%;
         // right: 27%;
         // bottom: 8%;
         // scale: 1.5;

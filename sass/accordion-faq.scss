@@ -1,0 +1,116 @@
+.daftar {
+    a {
+        text-decoration: none;
+    }
+    .accordion,
+    .accordion * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .accordion {
+        overflow: hidden;
+        background: rgba(white, 0.8);
+        border-top: 1px solid #acacac;
+        margin: 40px 0;
+    }
+
+    .accordion-section {
+        border-bottom: 1px solid #acacac;
+    }
+
+    .accordion-section-title {
+        width: 100%;
+        padding: 16px 16px 16px 72px;
+        display: inline-block;
+        position: relative;
+        background: rgba($color: #fff, $alpha: 0.5);
+        color: #1a1918;
+        transition: all linear 0.15s;
+        font-size: 1.2rem;
+        font-weight: 600;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 16px;
+            top: 8px;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/icon-tol.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        // background: #7ac143;
+        // padding: 8px 16px;
+        // border-radius: 16px 16px 0 0;
+    }
+
+    .accordion-section-title:focus {
+        color: #1a1918;
+    }
+
+    .accordion-section-title .plus,
+    .accordion-section-title .minus {
+        position: absolute;
+        right: 16px;
+        width: 10px;
+    }
+
+    .accordion-section-title .plus {
+        display: inline-block;
+        float: right;
+    }
+
+    .accordion-section-title .minus {
+        display: none;
+    }
+
+    .accordion-section-title.active {
+        color: #1a1918;
+    }
+
+    .accordion-section-title.active .minus {
+        display: inline-block;
+        float: right;
+    }
+
+    .accordion-section-title.active .plus {
+        display: none;
+    }
+
+    .accordion-section-title.active,
+    .accordion-section-title:hover {
+        text-decoration: none;
+    }
+
+    .accordion-section-content {
+        padding: 15px 15px;
+        display: none;
+        td {
+            // font-size: 1.1rem;
+            padding: 4px 8px;
+            width: 45%;
+            &:first-child {
+                font-weight: 600;
+            }
+            &:last-child {
+                width: 20%;
+                img {
+                    width: 40px;
+                }
+            }
+            // text-align: center;
+        }
+    }
+
+    .accordion-section-content p {
+        margin-top: 0;
+    }
+
+    .accordion-section-content#accordion-3 p {
+        margin-bottom: 2px;
+        line-height: 1.2;
+    }
+}

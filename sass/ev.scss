@@ -38,7 +38,8 @@
             width: fit-content;
             padding: 8px 16px;
             // background: white;
-            background: #dff3f7;
+            // background: #dff3f7;
+            background: #cfe2e6;
             display: block;
             @media screen and (max-width: 768px) {
                 width: 100%;
@@ -75,6 +76,159 @@
             p {
                 // margin-bottom: 0;
             }
+        }
+    }
+}
+
+.ev-carx {
+    padding: 0;
+    background: linear-gradient(-45deg, #78bdcd, transparent);
+    .wraping {
+        .all {
+            table {
+                td {
+                    width: 45%;
+                    vertical-align: top;
+                    padding: 8px 0;
+                    &:first-child {
+                        font-weight: bold;
+                    }
+                }
+            }
+            margin-bottom: 24px;
+            .judul {
+                padding: 16px;
+                // background: rgba($color: white, $alpha: 0.8);
+                background: #f7f7f7;
+                border-radius: 16px 16px 0 0;
+                width: fit-content;
+                h4 {
+                    margin-bottom: 0;
+                }
+            }
+            .details {
+                padding: 16px;
+                border-radius: 0 16px 16px 16px;
+                // background: #ccc;
+                background: #baeaec;
+            }
+        }
+    }
+    .mobil {
+        position: absolute;
+        left: 8%;
+        bottom: 8%;
+        width: 150px;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .bg-nya {
+        position: absolute;
+        // inset: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        @media screen and (max-width: 768px) {
+            height: 100%;
+            left: 40%;
+            scale: 2.5;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            @media screen and (max-width: 768px) {
+                // object-fit: cover;
+            }
+        }
+    }
+    @keyframes ev {
+        0% {
+            top: -28vh;
+            left: -16vw;
+            // width: 50px;
+            opacity: 0;
+            // top: 0vh;
+            // left: 0vw;
+            // // width: 320px;
+
+            // opacity: 0;
+        }
+        10% {
+            top: -28vh;
+            left: -16vw;
+            // width: 50px;
+            opacity: 1;
+            // top: 0vh;
+
+            // left: 0vw;
+            // // width: 320px;
+            // opacity: 1;
+        }
+        30% {
+            // top: -28vh;
+            // left: -16vw;
+            // // width: 50px;
+            // opacity: 1;
+            top: 0vh;
+            left: 0vw;
+
+            // // width: 320px;
+            opacity: 1;
+        }
+
+        90% {
+            // top: -32vh;
+            // left: -16vw;
+            // // width: 50px;
+            // opacity: 1;
+            top: 0vh;
+            // filter: drop-shadow(0 0 0.75rem #13726a);
+            left: 0vw;
+            // width: 320px;
+            opacity: 1;
+        }
+        100% {
+            top: 0vh;
+            left: 0vw;
+            // width: 320px;
+            opacity: 0;
+            // filter: drop-shadow(0 0 0.75rem #13726a);
+        }
+    }
+    @keyframes neonz {
+        0%,
+        100% {
+            filter: drop-shadow(0 0 0.75rem #13726a);
+        }
+        50% {
+            filter: initial;
+        }
+    }
+    .mobil-nya {
+        // animation: ev 10s linear infinite;
+        animation: neonz 1s linear infinite;
+        position: absolute;
+        // inset: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        @media screen and (max-width: 768px) {
+            // animation: initial;
+            scale: 2.5;
+            left: 40%;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
     }
 }

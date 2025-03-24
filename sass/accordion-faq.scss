@@ -69,6 +69,9 @@
 
     .accordion-section-title.active {
         color: #1a1918;
+        background: #ff9393;
+        // background: $colorred;
+        transition: 0.3s;
     }
 
     .accordion-section-title.active .minus {

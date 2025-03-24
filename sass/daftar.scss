@@ -1,4 +1,180 @@
 .daftar {
+    padding: 0;
+    @keyframes dash {
+        0%,
+        100% {
+            bottom: 0;
+        }
+        50% {
+            bottom: -5px;
+        }
+    }
+    .dashboard {
+        position: absolute;
+        animation: dash 2s linear infinite;
+        // inset: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        z-index: 3;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    @keyframes mobil1x {
+        0% {
+            bottom: 20vh;
+            left: 0vw;
+            width: 320px;
+            opacity: 0;
+        }
+        10% {
+            bottom: 20vh;
+            left: 0vw;
+            width: 320px;
+            opacity: 1;
+        }
+        90% {
+            bottom: 60vh;
+            left: 44vw;
+            width: 50px;
+            opacity: 1;
+        }
+        100% {
+            bottom: 60vh;
+            left: 44vw;
+            width: 50px;
+            opacity: 0;
+        }
+    }
+
+    @keyframes mobil1xmob {
+        0% {
+            width: 125px;
+            bottom: 38vh;
+            left: -26vw;
+            opacity: 0;
+        }
+        10% {
+            width: 125px;
+            bottom: 38vh;
+            left: -26vw;
+            opacity: 1;
+        }
+        90% {
+            width: 30px;
+            bottom: 52vh;
+            left: 36vw;
+
+            opacity: 1;
+        }
+        100% {
+            // bottom: 60vh;
+            // left: 44vw;
+            // width: 50px;
+            width: 30px;
+            bottom: 52vh;
+            left: 36vw;
+
+            opacity: 0;
+        }
+    }
+
+    @keyframes mobil2x {
+        0% {
+            bottom: 20vh;
+            right: 0vw;
+            width: 360px;
+            opacity: 0;
+        }
+        10% {
+            bottom: 20vh;
+            right: 0vw;
+            width: 360px;
+            opacity: 1;
+        }
+        90% {
+            bottom: 60vh;
+            right: 44vw;
+            width: 50px;
+            opacity: 1;
+        }
+        100% {
+            bottom: 60vh;
+            right: 44vw;
+            width: 50px;
+            opacity: 0;
+        }
+    }
+    @keyframes mobil2xmob {
+        0% {
+            width: 180px;
+            bottom: 38vh;
+            right: -26vw;
+            opacity: 0;
+        }
+        10% {
+            width: 180px;
+            bottom: 38vh;
+            right: -26vw;
+            opacity: 1;
+        }
+        90% {
+            width: 60px;
+            bottom: 52vh;
+            right: 36vw;
+
+            opacity: 1;
+        }
+        100% {
+            // bottom: 60vh;
+            // right: 44vw;
+            // width: 50px;
+            width: 60px;
+            bottom: 52vh;
+            right: 36vw;
+
+            opacity: 0;
+        }
+    }
+    .mobil {
+        position: absolute;
+        width: 360px;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        &-1 {
+            bottom: 20vh;
+            left: 0vw;
+            animation: mobil1x 6s linear infinite;
+            @media screen and (max-width: 768px) {
+                width: 125px;
+                animation: mobil1xmob 5s linear infinite;
+                bottom: 38vh;
+                left: -26vw;
+            }
+        }
+        &-2 {
+            bottom: 20vh;
+            width: 360px;
+            right: 0vw;
+            animation: mobil2x 9s linear infinite;
+            @media screen and (max-width: 768px) {
+                width: 125px;
+                animation: mobil2xmob 9s linear infinite;
+                bottom: 38vh;
+                right: -26vw;
+            }
+        }
+    }
     @media screen and (max-width: 768px) {
         // padding: 32px 0 150px;
     }
@@ -17,10 +193,16 @@
         // bottom: 8%;
         // scale: 1.5;
         height: auto;
+        @media screen and (max-width: 768px) {
+            height: 100%;
+        }
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
+            @media screen and (max-width: 768px) {
+                object-fit: cover;
+            }
         }
     }
     .box-pom {

@@ -82,7 +82,12 @@
 
 .ev-carx {
     padding: 0;
-    background: linear-gradient(-45deg, #78bdcd, transparent);
+    .bg-warna {
+        background: linear-gradient(-30deg, #78bdcd 65%, transparent 43%);
+        @media screen and (max-width: 768px) {
+            background: linear-gradient(-30deg, #78bdcd 60%, transparent 43%);
+        }
+    }
     .wraping {
         .all {
             table {
@@ -110,7 +115,7 @@
                 padding: 16px;
                 border-radius: 0 16px 16px 16px;
                 // background: #ccc;
-                background: #baeaec;
+                background: rgba(#baeaec, 0.8);
             }
         }
     }

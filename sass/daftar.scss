@@ -119,6 +119,33 @@
             opacity: 0;
         }
     }
+
+    @keyframes mobil3x {
+        0% {
+            bottom: 45vh;
+            width: 190px;
+            right: 24vw;
+            opacity: 0;
+        }
+        10% {
+            bottom: 45vh;
+            width: 190px;
+            right: 24vw;
+            opacity: 1;
+        }
+        90% {
+            bottom: 61vh;
+            width: 30px;
+            right: 46vw;
+            opacity: 1;
+        }
+        100% {
+            bottom: 61vh;
+            width: 30px;
+            right: 46vw;
+            opacity: 0;
+        }
+    }
     @keyframes mobil2xmob {
         0% {
             width: 180px;
@@ -150,6 +177,40 @@
             opacity: 0;
         }
     }
+    @keyframes mobil3xmob {
+        0% {
+            width: 88px;
+            bottom: 46vh;
+            right: 8vw;
+            opacity: 0;
+        }
+        10% {
+            width: 88px;
+            bottom: 46vh;
+            right: 8vw;
+            opacity: 1;
+        }
+        90% {
+            width: 33px;
+            bottom: 53vh;
+            right: 42vw;
+            opacity: 1;
+        }
+        100% {
+            // bottom: 60vh;
+            // right: 44vw;
+            // width: 50px;
+            width: 33px;
+            bottom: 53vh;
+            right: 42vw;
+
+            opacity: 0;
+        }
+    }
+    // width: 33px;
+    // animation: initial;
+    // bottom: 53vh;
+    // right: 42vw;
     .mobil {
         position: absolute;
         width: 360px;
@@ -180,6 +241,20 @@
                 animation: mobil2xmob 9s linear infinite;
                 bottom: 38vh;
                 right: -26vw;
+                z-index: 3;
+            }
+        }
+        &-3 {
+            bottom: 45vh;
+            width: 190px;
+            right: 24vw;
+            animation: mobil3x 8s linear infinite;
+            @media screen and (max-width: 768px) {
+                animation: mobil3xmob 8s linear infinite;
+                width: 88px;
+                bottom: 46vh;
+                right: 8vw;
+                z-index: 1;
             }
         }
     }

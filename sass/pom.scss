@@ -297,15 +297,15 @@
 }
 
 .dedi-show {
-    position: absolute;
+    position: relative;
     z-index: 8;
-    top: 96%;
-    left: 50%;
-    width: 100%;
-    z-index: 18;
-    // background: white;
-    /* height: 20px; */
-    translate: -50% -50%;
+    // top: 96%;
+    // left: 50%;
+    // width: 100%;
+    // z-index: 18;
+    // // background: white;
+    // /* height: 20px; */
+    // translate: -50% -50%;
     &.hah {
         // top: 50%;
         position: relative;
@@ -314,7 +314,7 @@
         margin: 24px 0;
         translate: initial;
         @media screen and (max-width: 768px) {
-            translate: -50% -150%;
+            // translate: -50% -150%;
         }
     }
     @media screen and (max-width: 768px) {

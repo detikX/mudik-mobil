@@ -295,11 +295,11 @@
         }
     }
     .bg-warnax {
-        background: linear-gradient(to bottom, #59f4c0 77%, #1c96bb 22%);
+        background: linear-gradient(to bottom, #59f4c0 77%, #7f9ba2 22%);
         position: absolute;
         inset: 0;
         @media screen and (max-width: 768px) {
-            background: linear-gradient(to bottom, #59f4c0 57%, #1c96bb 22%);
+            background: linear-gradient(to bottom, #59f4c0 57%, #7f9ba2 22%);
         }
     }
     .image {
@@ -307,6 +307,76 @@
         inset: 0;
         width: 100%;
         height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.service {
+    padding: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        z-index: 5;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid #435670;
+        translate: -50% 0%;
+    }
+    .bg-hel {
+        background: #536681;
+        position: absolute;
+        inset: 0;
+    }
+    h3 {
+        color: white;
+    }
+    .boxx {
+        background: rgba($color: white, $alpha: 0.8);
+        padding: 16px;
+        // border-top: 6px solid rgba(249, 236, 69, 1);
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .kotak-suara {
+        margin-bottom: 24px;
+        .judul {
+            padding: 16px;
+            background: white;
+            border-radius: 16px 16px 0 0;
+            width: fit-content;
+            h5 {
+                margin-bottom: 0;
+            }
+        }
+        .desc {
+            background: rgb(124, 255, 177, 0.9);
+            padding: 16px;
+            border-radius: 0 16px 16px 16px;
+        }
+    }
+    .image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: auto;
+        @media screen and (max-width: 768px) {
+            position: absolute;
+            /* inset: 0; */
+            inset: initial;
+            width: 100%;
+            height: 100%;
+            left: 16%;
+            scale: 1.8;
+        }
         img {
             width: 100%;
             height: 100%;

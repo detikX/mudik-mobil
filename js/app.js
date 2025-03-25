@@ -38,12 +38,22 @@ $(document).ready(function () {
 
 
 var mobil = $("#show-mobil");
+var ev = $("#show-ev");
 
 mobil.css('display', 'none')
 $("#bensin").click(function (e) {
     mobil.css('display', '')
     $('html, body').animate({
         scrollTop: mobil.offset().top + 102
+    }, 1000);
+    e.preventDefault
+})
+
+ev.css('display', 'none')
+$("#ev").click(function (e) {
+    ev.css('display', '')
+    $('html, body').animate({
+        scrollTop: ev.offset().top + 102
     }, 1000);
     e.preventDefault
 })

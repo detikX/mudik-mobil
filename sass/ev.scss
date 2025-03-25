@@ -100,6 +100,21 @@
 }
 
 .ev-carx {
+    h3 {
+        font-size: 3rem;
+        @media screen and (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+    .kotakx {
+        background: rgba(white, 0.8);
+        padding: 16px;
+        margin-bottom: 24px;
+        border-top: 6px solid #7cc5cf;
+        @media screen and (max-width: 768px) {
+            background: rgba($color: white, $alpha: 0.9);
+        }
+    }
     padding: 0;
     .bg-warna {
         background: linear-gradient(-30deg, #78bdcd 65%, transparent 43%);

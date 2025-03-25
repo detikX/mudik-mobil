@@ -306,12 +306,12 @@
     // background: white;
     /* height: 20px; */
     translate: -50% -50%;
-    &.hah {
-        top: 99.5%;
-        @media screen and (max-width: 768px) {
-            top: 99.5%;
-        }
-    }
+    // &.hah {
+    //     top: 99.5%;
+    //     @media screen and (max-width: 768px) {
+    //         top: 99.5%;
+    //     }
+    // }
     @media screen and (max-width: 768px) {
         top: 96%;
     }

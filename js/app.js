@@ -46,6 +46,7 @@ $("#bensin").click(function (e) {
     $('html, body').animate({
         scrollTop: mobil.offset().top + 102
     }, 1000);
+    ev.hide()
     e.preventDefault
 })
 
@@ -55,5 +56,6 @@ $("#ev").click(function (e) {
     $('html, body').animate({
         scrollTop: ev.offset().top + 102
     }, 1000);
+    mobil.hide()
     e.preventDefault
 })

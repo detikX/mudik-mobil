@@ -282,15 +282,25 @@
 
 .maintenance {
     padding: 0;
+    padding: 16px 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -24px;
+        height: 44px;
+        width: 100%;
+        background: #59f4c0;
+    }
 
     .allsx {
+        margin-bottom: 24px;
         .judulx {
             width: fit-content;
-            background: rgba($color: white, $alpha: 0.9);
+            background: rgba($color: white, $alpha: 0.8);
             padding: 16px;
         }
         .desc {
-            background: rgba(white, 1);
+            background: rgba(white, 0.9);
             padding: 16px;
         }
     }
@@ -341,7 +351,9 @@
     .boxx {
         background: rgba($color: white, $alpha: 0.8);
         padding: 16px;
-        // border-top: 6px solid rgba(249, 236, 69, 1);
+        // border-top: 6px solid rgb(124, 255, 177, 1);
+        border-top: 6px solid #334660;
+
         p {
             margin-bottom: 0;
         }
@@ -358,7 +370,8 @@
             }
         }
         .desc {
-            background: rgb(124, 255, 177, 0.9);
+            // background: rgb(124, 255, 177, 0.9);
+            background: rgba($color: white, $alpha: 0.9);
             padding: 16px;
             border-radius: 0 16px 16px 16px;
         }
@@ -382,5 +395,20 @@
             height: 100%;
             object-fit: contain;
         }
+    }
+}
+
+.highigh {
+    // padding: 0;
+    min-height: auto;
+    background: #7f9ba2;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -24px;
+        height: 24px;
+        background: #7f9ba2;
+        // inset: 0;
+        width: 100%;
     }
 }

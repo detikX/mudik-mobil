@@ -41,21 +41,27 @@ var mobil = $("#show-mobil");
 var ev = $("#show-ev");
 
 mobil.css('display', 'none')
-$("#bensin").click(function (e) {
-    mobil.css('display', '')
-    $('html, body').animate({
-        scrollTop: mobil.offset().top + 102
-    }, 1000);
-    ev.hide()
-    e.preventDefault
+$("#bensin, .dedi-bensin").click(function () {
+    setTimeout(() => {
+        mobil.css('display', '')
+        $('html, body').animate({
+            scrollTop: mobil.offset().top + 102
+        }, 1000);
+
+    }, 500);
+    ev.fadeOut()
+
 })
 
 ev.css('display', 'none')
-$("#ev").click(function (e) {
-    ev.css('display', '')
-    $('html, body').animate({
-        scrollTop: ev.offset().top + 102
-    }, 1000);
-    mobil.hide()
-    e.preventDefault
+$("#ev, .dedi-ev").click(function () {
+    setTimeout(() => {
+
+        ev.css('display', '')
+        $('html, body').animate({
+            scrollTop: ev.offset().top + 102
+        }, 1000);
+    }, 500);
+    mobil.fadeOut()
+    // e.preventDefault
 })

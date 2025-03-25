@@ -282,6 +282,18 @@
 
 .maintenance {
     padding: 0;
+
+    .allsx {
+        .judulx {
+            width: fit-content;
+            background: rgba($color: white, $alpha: 0.9);
+            padding: 16px;
+        }
+        .desc {
+            background: rgba(white, 1);
+            padding: 16px;
+        }
+    }
     .bg-warnax {
         background: linear-gradient(to bottom, #59f4c0 77%, #1c96bb 22%);
         position: absolute;

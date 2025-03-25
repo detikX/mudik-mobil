@@ -307,7 +307,12 @@
     /* height: 20px; */
     translate: -50% -50%;
     &.hah {
-        top: 99.5%;
+        // top: 50%;
+        position: relative;
+        left: initial;
+        top: initial;
+        margin: 24px 0;
+        translate: initial;
         @media screen and (max-width: 768px) {
             translate: -50% -150%;
         }

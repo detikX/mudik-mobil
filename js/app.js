@@ -37,13 +37,13 @@ $(document).ready(function () {
 
 
 
-// var mobil = $("#show-mobil");
+var mobil = $("#show-mobil");
 
-// mobil.css('display', 'none')
-// $("#bensin").click(function (e) {
-//     // mobil.css('display', '')
-//     $('html, body').animate({
-//         scrollTop: mobil.offset().top
-//     }, 300);
-//     e.preventDefault
-// })
+mobil.css('display', 'none')
+$("#bensin").click(function (e) {
+    mobil.css('display', '')
+    $('html, body').animate({
+        scrollTop: mobil.offset().top + 102
+    }, 1000);
+    e.preventDefault
+})

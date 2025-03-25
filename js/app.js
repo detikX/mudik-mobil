@@ -40,7 +40,7 @@ $(document).ready(function () {
 var mobil = $("#show-mobil");
 var ev = $("#show-ev");
 
-// mobil.css('display', 'none')
+mobil.css('display', 'none')
 $("#bensin, .dedi-bensin").click(function () {
     setTimeout(() => {
         mobil.css('display', '')
@@ -53,7 +53,7 @@ $("#bensin, .dedi-bensin").click(function () {
 
 })
 
-// ev.css('display', 'none')
+ev.css('display', 'none')
 $("#ev, .dedi-ev").click(function () {
     setTimeout(() => {
 

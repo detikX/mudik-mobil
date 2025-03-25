@@ -2,22 +2,41 @@
     background: linear-gradient(to bottom, #f4ff87 24%, #7cc5cf 24%);
     padding: 32px 0 0;
     // background: #f4ff87;
+    .sticky-mode {
+        min-height: auto;
+        @media screen and (max-width: 768px) {
+            top: 30%;
+        }
+    }
+
     @media screen and (max-width: 768px) {
         background: #f4ff87;
     }
     .bg-blue {
         // border-top: 3px solid #539199;
         padding: 3rem 0;
+        &::after {
+            // content: "";
+            // position: absolute;
+            // inset: 0;
+            // width: 100%;
+            // height: 100%;
+            // background-image: url("../img/bg-petir.png");
+        }
         @media screen and (max-width: 768px) {
             background: #7cc5cf;
         }
     }
     .image {
+        position: relative;
+        right: -34%;
+
         @media screen and (max-width: 768px) {
             width: 100%;
             /* height: 50vh; */
             scale: 1.5;
             position: relative;
+            top: 30%;
             left: 24%;
         }
         img {
@@ -67,10 +86,10 @@
         .right-side {
             // display: inline-block;
             // width: 62%;
-            // background: rgba($color: #fff, $alpha: 0.2);
+            background: rgba($color: #fff, $alpha: 0.9);
             // padding: 16px;
             // background: rgb(223 243 247);
-            background: white;
+            // background: white;
             padding: 16px;
             border-bottom: 3px solid #3f818f;
             p {
@@ -142,6 +161,7 @@
         top: 0;
         width: 100%;
         height: auto;
+
         @media screen and (max-width: 768px) {
             height: 100%;
             left: 40%;

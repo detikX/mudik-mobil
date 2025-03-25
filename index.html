@@ -23,11 +23,6 @@
                     </h2>
                 </div>
             </section>
-            <section class="pembukaan">
-                <div class="wrap-detikx">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum praesentium eos, consequuntur laborum hic nihil quo quam excepturi soluta ut odio atque, eveniet, dolorem perferendis illum animi nostrum autem magnam.</p>
-                </div>
-            </section>
             <section class="data">
                 <div class="right-side">
                     <div class="photo"></div>
@@ -156,6 +151,8 @@
                 <div class="wrap-detikx">
                     <h3>Persiapan Mobil Listrik</h3>
                     <p>Ingin perjalanan mudik lebaran menggunakan mobil listrik, aman dan nyaman sampai tujuan. Ada beberapa hal penting perlu diperhatikan atau dicek sebelum melakukan perjalanan mudik.</p>
+                </div>
+                <div class="sticky-mode">
                     <div class="image">
                         <img src="img/ev-car.png" alt="">
                     </div>
@@ -239,22 +236,11 @@
                     </div>
                 </div>
             </section>
-            <section class="jalan">
-                <div class="image">
-                    <img src="img/bumper-mudik-05.png" alt="">
-                </div>
-                <div class="mobil">
-                    <img src="img/car.png" alt="">
-                </div>
-                <div class="mobil-mudik">
-                    <img src="img/mobil-mudik.png" alt="">
-                </div>
-            </section>
             <section class="pom-bensin box">
                 <div class="">
                     <div class="cek-bg">
                         <div class="text-center">
-                            <h3>Pom Bensin dan SPKLU di Rest Area</h3>
+                            <h3>Pilih Salah Satu</h3>
                         </div>
                         <div class="row">
                             <div class="col-md-6 mb-5">
@@ -264,6 +250,7 @@
                                     </div>
                                     <div class="car-pom text2">
                                         <img src="img/pom-bensin.png" alt="">
+                                        <button class="click left" id="bensin">Mobil Bensin</button>
                                     </div>
                                 </div>
                             </div>
@@ -275,18 +262,20 @@
                                 </div>
                                 <div class="car-ev text3">
                                     <img src="img/pom-ev.png" alt="">
+                                    <button class="click right" id="bensin">Mobil Listrik</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="daftar">
+            <!-- daftar pom bensin -->
+            <section class="daftar" hidden>
                 <div class="sticky-mode">
                     <!-- <picture class="image">
-                        <source media="(max-width:768px)" srcset="img/jalan-mobile-04.png">
-                        <img src="img/jalan-03.png" alt="Flowers">
-                    </picture> -->
+                            <source media="(max-width:768px)" srcset="img/jalan-mobile-04.png">
+                            <img src="img/jalan-03.png" alt="Flowers">
+                        </picture> -->
                     <div class="image">
                         <img src="img/bumper-mudik-07.png" alt="">
                     </div>
@@ -301,6 +290,16 @@
                     </div>
                 </div>
                 <div class="wrap-detikx">
+                    <div class="kotak simple">
+                        <p>
+                            Jarak tempuh rata-rata mobil konvensional dengan tangki bensin penuh sangat bervariasi, tergantung pada beberapa faktor seperti jenis dan ukuran mobil, kapasitas tangki bensin, kondisi jalan serta gaya mengemudi dan kondisi mobil. Namun, sebagai perkiraan umum, mobil konvensional dengan tangki bensin penuh biasanya dapat menempuh jarak rata-rata di atas 400 km.
+                        </p>
+                    </div>
+                    <div class="kotak simple">
+                        <p>
+                            Sebagai contoh, Mitsubishi Xpander memiliki kapasitas tangki bensin 45 liter. Di dalam kota, konsumsi BBM mencapai 1 liter/11 km. Dengan mengisi full, mobil bisa digunakan untuk menempuh jarak 495 km. Sementara untuk Honda Mobilio memiliki tangki bensin sebesar 42 liter. Konsumsi BBM Mobilio mencapai 1 liter/14 km dan bisa menempuh jarak 588 km. Untuk mendapatkan perkiraan yang lebih akurat, diperlukan informasi tentang spesifikasi pabrikan mobil atau dapat menggunakan aplikasi penghitung konsumsi bahan bakar.
+                        </p>
+                    </div>
                     <h4 class="text-center">Lokasi Pom Bensin</h4>
                     <div class="accordion">
                         <div class="accordion-section">
@@ -1089,7 +1088,18 @@
                 <br>
                 <br>
             </section>
-            <section class="ev-carx">
+            <section class="jalan" hidden>
+                <div class="image">
+                    <img src="img/bumper-mudik-05.png" alt="">
+                </div>
+                <div class="mobil">
+                    <img src="img/car.png" alt="">
+                </div>
+                <div class="mobil-mudik">
+                    <img src="img/mobil-mudik.png" alt="">
+                </div>
+            </section>
+            <section class="ev-carx" hidden>
                 <div class="sticky-mode bg-warna">
                     <div class="bg-nya">
                         <img src="img/bumper-mudik-09.png" alt="">

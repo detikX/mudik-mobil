@@ -26,11 +26,13 @@
         top: 46%;
         translate: -50% -50%;
         width: 50%;
+        background: rgba($color: #3b925e, $alpha: 0.8);
         // background: rgba(white, 0.7);
         @media screen and (max-width: 768px) {
             // right: initial;
             top: 22%;
             width: 86%;
+            background: initial;
             left: 50%;
             translate: -50% -50%;
         }

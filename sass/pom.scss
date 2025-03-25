@@ -1,9 +1,10 @@
 .pom-bensin {
-    background: linear-gradient(to bottom, #d3ecef, transparent);
+    background: linear-gradient(to bottom, $colorred, transparent);
     // padding: 0;
     h3 {
         font-family: "jost";
         margin-top: 100px;
+        font-size: 3rem;
     }
     .image {
         width: 100%;
@@ -95,6 +96,191 @@
     // top: -50vh;
     // padding: 100px;
     // background: #000;
+
+    /* CSS */
+    .button-29 {
+        align-items: center;
+        appearance: none;
+        background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #1d6b60 100%);
+        border: 0;
+        //    none;
+        border-radius: 6px;
+        // box-shadow:
+        //     rgba(45, 35, 66, 0.4) 0 2px 4px,
+        //     rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        //     rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        // font-family: "JetBrains Mono", monospace;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition:
+            box-shadow 0.15s,
+            transform 0.15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 18px;
+    }
+
+    .button-29:focus {
+        // box-shadow:
+        //     #5adaff 0 0 0 1.5px inset,
+        //     rgba(45, 35, 66, 0.4) 0 2px 4px,
+        //     rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        //     #5adaff 0 -3px 0 inset;
+    }
+
+    .button-29:hover {
+        // box-shadow:
+        //     rgba(45, 35, 66, 0.4) 0 4px 8px,
+        //     rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        //     #5adaff 0 -3px 0 inset;
+        // transform: translateY(-2px);
+    }
+
+    .button-29:active {
+        // box-shadow: #5adaff 0 3px 7px inset;
+        // transform: translateY(2px);
+    }
+
+    /* CSS */
+    .click {
+        // font-family: "Jost", sans-serif;
+        // font-size: 1.5rem;
+        // line-height: 1.7rem;
+        // letter-spacing: 2px;
+        // position: absolute;
+        // text-transform: uppercase;
+        // color: #000;
+        // background: white;
+        // cursor: pointer;
+        // border: 3px solid;
+        // padding: 0.25em 0.5em;
+        // box-shadow:
+        //     1px 1px 0px 0px,
+        //     2px 2px 0px 0px,
+        //     3px 3px 0px 0px,
+        //     4px 4px 0px 0px,
+        //     5px 5px 0px 0px;
+        align-items: center;
+        appearance: none;
+        // radial-gradient(100% 100% at 100% 0, #07a1ce 0, #1d6b60 100%)
+        background: radial-gradient(100% 100% at 100% 0, #07a1ce 0, #1d6b60 100%);
+        border: 0;
+        border-radius: 6px;
+        box-shadow:
+            rgba(45, 35, 66, 0.4) 0 2px 4px,
+            rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+            rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        // font-family: "JetBrains Mono", monospace;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        // position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition:
+            box-shadow 0.15s,
+            transform 0.15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 1.7rem;
+        position: absolute;
+        width: 100%;
+        transition: 0.3s;
+        font-weight: 600;
+        // &:focus {
+        //     box-shadow:
+        //         #5adaff 0 0 0 1.5px inset,
+        //         rgba(45, 35, 66, 0.4) 0 2px 4px,
+        //         rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        //         #5adaff 0 -3px 0 inset;
+        // }
+        // &:hover {
+        //     box-shadow:
+        //         rgba(45, 35, 66, 0.4) 0 4px 8px,
+        //         rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        //         #5adaff 0 -3px 0 inset;
+        //     transform: translateY(-2px);
+        // }
+
+        // &:active {
+        //     box-shadow: #5adaff 0 3px 7px inset;
+        //     transform: translateY(2px);
+        // }
+
+        &.left {
+            top: 12%;
+            left: -100%;
+
+            @media screen and (max-width: 768px) {
+                top: -100%;
+                left: 0;
+            }
+
+            &:active {
+                box-shadow: 0px 0px 0px 0px;
+                top: 15%;
+                left: -95%;
+                @media screen and (max-width: 768px) {
+                    box-shadow: 0px 0px 0px 0px;
+                    top: -95%;
+                    left: 5%;
+                }
+            }
+        }
+        &.right {
+            top: 12%;
+            right: -100%;
+            &:active {
+                box-shadow: 0px 0px 0px 0px;
+                top: 15%;
+                right: -95%;
+                @media screen and (max-width: 768px) {
+                    box-shadow: 0px 0px 0px 0px;
+                    top: -95%;
+                    right: 5%;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                top: -100%;
+                right: 0;
+            }
+        }
+    }
+
+    .click:active {
+    }
+
+    @media (min-width: 768px) {
+        .click {
+            padding: 0.25em 0.75em;
+        }
+    }
 }
 
 .box h2 {

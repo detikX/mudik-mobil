@@ -26,7 +26,8 @@
         top: 46%;
         translate: -50% -50%;
         width: 50%;
-        background: rgba($color: #3b925e, $alpha: 0.8);
+        // transform: skewX(-20deg);
+        // background: rgba($color: #3b925e, $alpha: 0.8);
         // background: rgba(white, 0.7);
         @media screen and (max-width: 768px) {
             // right: initial;
@@ -38,13 +39,16 @@
         }
         h2 {
             font-size: 4.5rem;
+            // transform: skewX(20deg);
             text-align: center;
             color: #fff;
-            text-shadow: 2px 2px #05464c;
+
+            text-shadow: 4px 4px #05464c;
             font-family: "Righteous";
             @media screen and (max-width: 768px) {
                 font-size: 2.5rem;
                 text-align: center;
+                text-shadow: 2px 2px #05464c;
             }
         }
     }

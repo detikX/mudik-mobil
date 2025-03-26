@@ -40,6 +40,8 @@ $(document).ready(function () {
 var mobil = $("#show-mobil");
 var ev = $("#show-ev");
 
+
+$(".jalan").hide();
 mobil.css('display', 'none')
 $("#bensin, .dedi-bensin").click(function () {
     setTimeout(() => {
@@ -50,7 +52,7 @@ $("#bensin, .dedi-bensin").click(function () {
 
     }, 500);
     ev.fadeOut()
-
+    $(".jalan").show();
 })
 
 ev.css('display', 'none')
@@ -63,5 +65,6 @@ $("#ev, .dedi-ev").click(function () {
         }, 1000);
     }, 500);
     mobil.fadeOut()
+    $(".jalan").show();
     // e.preventDefault
 })

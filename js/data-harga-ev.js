@@ -19,7 +19,7 @@ Highcharts.chart('container', {
         text: 'Kisaran Harga Mobil Listrik',
         style: {
             color: "#4a4a4a",
-            font: 'bold 22px "Jost", sans-serif',
+            font: 'bold 2rem "Jost", sans-serif',
             // lineHeight: '2rem'
         }
     },

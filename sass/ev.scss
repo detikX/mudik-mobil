@@ -298,6 +298,15 @@
             width: fit-content;
             background: rgba($color: white, $alpha: 0.8);
             padding: 16px;
+            display: block;
+            i {
+                display: inline-block;
+                font-size: 1.5rem;
+            }
+            h5 {
+                display: inline-block;
+                font-size: 1.3rem;
+            }
         }
         .desc {
             background: rgba(white, 0.9);
@@ -349,10 +358,11 @@
         color: white;
     }
     .boxx {
-        background: rgba($color: white, $alpha: 0.8);
+        // background: rgba($color: white, $alpha: 0.8);
+        background: rgba(192, 255, 223, 0.9);
         padding: 16px;
         // border-top: 6px solid rgb(124, 255, 177, 1);
-        border-top: 6px solid #334660;
+        // border-top: 6px solid #334660;
 
         p {
             margin-bottom: 0;

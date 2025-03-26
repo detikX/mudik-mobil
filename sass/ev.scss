@@ -297,7 +297,7 @@
         .judulx {
             width: fit-content;
             background: rgba($color: white, $alpha: 0.8);
-            padding: 16px;
+            padding: 8px 16px;
             display: block;
             i {
                 display: inline-block;
@@ -306,6 +306,7 @@
             h5 {
                 display: inline-block;
                 font-size: 1.3rem;
+                margin-bottom: 0;
             }
         }
         .desc {
@@ -384,6 +385,9 @@
             background: rgba($color: white, $alpha: 0.9);
             padding: 16px;
             border-radius: 0 16px 16px 16px;
+            li {
+                margin: 0 16px;
+            }
         }
     }
     .image {

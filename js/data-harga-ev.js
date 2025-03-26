@@ -13,22 +13,15 @@ Highcharts.chart('container', {
         borderRadius: 16
     },
 
-    accessibility: {
-        description: 'Image description: A column range chart compares the ' +
-            'monthly temperature variations throughout 2023 in Vik i Sogn, ' +
-            'Norway. The chart is interactive and displays the temperature ' +
-            'range for each month when hovering over the data. The ' +
-            'temperature is measured in degrees Celsius on the X-axis and ' +
-            'the months are plotted on the Y-axis. The lowest temperature is ' +
-            'recorded in March at minus 13.1 Celsius. The lowest range of ' +
-            'temperatures is found in September ranging from a low of 9.6 ' +
-            'to a high of 23.0 Celsius. The highest temperature is found in ' +
-            'June at 28.4 Celsius, and has the highest range of temperatures ' +
-            'from 3.1 up to 28.4'
-    },
+
 
     title: {
-        text: 'Kisaran Harga Mobil Listrik'
+        text: 'Kisaran Harga Mobil Listrik',
+        style: {
+            color: "#4a4a4a",
+            font: 'bold 22px "Jost", sans-serif',
+            // lineHeight: '2rem'
+        }
     },
 
     credits: {
@@ -42,17 +35,48 @@ Highcharts.chart('container', {
         categories: [
             'Wuling', 'Cherry', 'VinFast', 'Citroen', 'DFSK',
             'BYD', 'MG', 'Hyundai', 'Nissan', 'Volvo', 'Toyota', 'Mercedes-Benz',
-        ]
+        ],
+        labels: {
+            // text: null,
+            // formatter: function () {
+            //     // var a = this.y.toString().replace('.', ',');
+            //     // return a + '%';
+            // },
+            style: {
+                // color: "#fafafa",
+                font: '14px "Jost", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+        },
     },
 
     yAxis: {
         title: {
             text: 'Harga'
-        }
+        },
+        labels: {
+            // text: null,
+            // formatter: function () {
+            //     // var a = this.y.toString().replace('.', ',');
+            //     // return a + '%';
+            // },
+            style: {
+                // color: "#fafafa",
+                font: '14px "Jost", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+        },
     },
 
     tooltip: {
-        valueSuffix: ''
+        valueSuffix: '',
+        style: {
+            // fontWeight: 'bold',
+            fontFamily: 'Jost',
+            fontSize: '14px'
+        }
         // pointFormat: '{series.name}: <b>{point.y}</b>',
     },
 
@@ -62,6 +86,13 @@ Highcharts.chart('container', {
             dataLabels: {
                 enabled: true,
                 // format: '{y}'
+                style: {
+                    // color: "#fafafa",
+                    font: 'normal 16px "Jost", sans-serif',
+                    // lineHeight: '2rem'
+                    fontWeight: 'normal',
+                    textOutline: false
+                },
             }
         }
     },

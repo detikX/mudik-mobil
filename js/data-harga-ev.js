@@ -1,8 +1,16 @@
+Highcharts.setOptions({
+    lang: {
+        thousandsSep: '.'
+    }
+})
+
 Highcharts.chart('container', {
 
     chart: {
         type: 'columnrange',
-        inverted: true
+        inverted: true,
+        backgroundColor: 'rgba(255,255,255,.6)',
+        borderRadius: 16
     },
 
     accessibility: {
@@ -20,29 +28,32 @@ Highcharts.chart('container', {
     },
 
     title: {
-        text: 'Temperature variation by month'
+        text: 'Kisaran Harga Mobil Listrik'
     },
 
+    credits: {
+        enabled: false //buat highcharts com
+    },
     subtitle: {
-        text: 'Observed in Vik i Sogn, Norway, 2023 | ' +
-            'Source: <a href="https://www.vikjavev.no/ver/" target="_blank">Vikjavev</a>'
+        text: null
     },
 
     xAxis: {
         categories: [
-            'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+            'Wuling', 'Cherry', 'VinFast', 'Citroen', 'DFSK',
+            'BYD', 'MG', 'Hyundai', 'Nissan', 'Volvo', 'Toyota', 'Mercedes-Benz',
         ]
     },
 
     yAxis: {
         title: {
-            text: 'Temperature ( °C )'
+            text: 'Harga'
         }
     },
 
     tooltip: {
-        valueSuffix: '°C'
+        valueSuffix: ''
+        // pointFormat: '{series.name}: <b>{point.y}</b>',
     },
 
     plotOptions: {
@@ -50,7 +61,7 @@ Highcharts.chart('container', {
             borderRadius: '50%',
             dataLabels: {
                 enabled: true,
-                format: '{y}°C'
+                // format: '{y}'
             }
         }
     },
@@ -60,20 +71,20 @@ Highcharts.chart('container', {
     },
 
     series: [{
-        name: 'Temperatures',
+        name: 'Harga (Rp)',
         data: [
-            [-9.5, 8.0],
-            [-7.8, 8.3],
-            [-13.1, 9.2],
-            [-4.4, 15.7],
-            [-1.0, 20.8],
-            [3.1, 28.4],
-            [8.9, 27.0],
-            [9.6, 23.0],
-            [4.9, 19.3],
-            [-5.2, 11.6],
-            [-10.5, 12.0],
-            [-12.1, 8.5]
+            [179000000, 398000000], //'Wuling'
+            [419000000, 608000000], //'Cherry'
+            [218000000, 273000000], //'VinFast'
+            [377000000, 377000000], //'Citroen', 
+            [350000000, 399000000],//'DFSK', 
+            [379000000, 719000000],//'BYD',
+            [395000000, 1688000000],//'MG', 
+            [499000000, 1300000000], //'Hyundai',  
+            [738000000, 740000000],//'Nissan', 
+            [890000000, 1360000000],//'Volvo', 
+            [1190000000, 1198000000], //'Toyota'
+            [1540000000, 3950000000] // mercy
         ]
     }]
 

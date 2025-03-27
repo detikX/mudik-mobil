@@ -49,12 +49,12 @@ $(".jalan,.creditx,.hehe").hide();
 // TweenMax.to($img,3, {autoAlpha:1,display:"block"});
 $("#bensin, .dedi-bensin").click(function () {
     // mobil.removeClass('sembunyiin');
-    mobil.children().addClass('lol')
     setTimeout(() => {
+        mobil.children().addClass('lol')
         // mobil.css('display', 'block')
         // gsap.to(".sembunyiin", { display: "block", opacity: 1 });
         $('html, body').animate({
-            scrollTop: mobil.offset().top + 102
+            scrollTop: mobil.offset().top
         }, 1000);
 
     }, 1000);
@@ -69,11 +69,11 @@ $("#ev, .dedi-ev").click(function () {
 
         ev.css('display', '')
         $('html, body').animate({
-            scrollTop: ev.offset().top
+            scrollTop: ev.offset().top + 200
         }, 1000);
     }, 500);
     // mobil.fadeOut()
-    mobil.addClass('sembunyiin')
+    mobil.children().removeClass('lol')
     $(".jalan,.creditx,.hehe").show();
     // e.preventDefault
 })

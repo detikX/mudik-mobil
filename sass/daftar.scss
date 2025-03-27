@@ -1,13 +1,13 @@
+.kotak {
+    background: linear-gradient(to bottom, rgba(white, 0.9), rgba(white, 0.8));
+    padding: 16px;
+    border-radius: 8px;
+    border-top: 8px solid #46a56c;
+    margin-bottom: 32px;
+}
 .daftar {
     padding: 0;
 
-    .kotak {
-        background: linear-gradient(to bottom, rgba(white, 0.9), rgba(white, 0.8));
-        padding: 16px;
-        border-radius: 8px;
-        border-top: 8px solid #46a56c;
-        margin-bottom: 32px;
-    }
     @keyframes dash {
         0%,
         100% {

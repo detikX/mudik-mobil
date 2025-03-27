@@ -20,8 +20,6 @@ gsap.registerEffect({
 // for each section, we define the zoom data here
 const zoomData = [ //kiri, atas
     { scale: 1, origin: [0.5, 0.5] },
-    { scale: 3.5, origin: [0.8, 1] }, // roda ban
-    { scale: 1, origin: [0.5, 0.5] },
     { scale: 2.5, origin: [0.5, 0.8] }, // radiator
     { scale: 1, origin: [0.5, 0.5] },
     { scale: 2.3, origin: [0.4, 0.6] }, //oli mesin
@@ -32,7 +30,9 @@ const zoomData = [ //kiri, atas
     { scale: 1, origin: [0.5, 0.5] },
     { scale: 2.5, origin: [.7, .7] },// komponen pendukung
     { scale: 1, origin: [0.5, 0.5] },
-    { scale: 3, origin: [.68, .48] },//panaskan mobil
+    { scale: 3, origin: [.68, .48] },//sistem rem
+    { scale: 1, origin: [0.5, 0.5] },
+    { scale: 1, origin: [0.5, 0.5] }, // roda ban backup 0.8, 1
     { scale: 1, origin: [0.5, 0.5] },
 ];
 

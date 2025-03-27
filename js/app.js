@@ -48,7 +48,8 @@ $(".jalan,.creditx,.hehe").hide();
 // // animate CSS autoAlpha to 1
 // TweenMax.to($img,3, {autoAlpha:1,display:"block"});
 $("#bensin, .dedi-bensin").click(function () {
-    mobil.removeClass('sembunyiin');
+    // mobil.removeClass('sembunyiin');
+    mobil.children().addClass('lol')
     setTimeout(() => {
         // mobil.css('display', 'block')
         // gsap.to(".sembunyiin", { display: "block", opacity: 1 });

@@ -213,7 +213,7 @@
         will-change: box-shadow, transform;
         font-size: 1.7rem;
         position: absolute;
-        width: 100%;
+        width: fit-content;
         transition: 0.3s;
         font-weight: 600;
         @media screen and (max-width: 768px) {

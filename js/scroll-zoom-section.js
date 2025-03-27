@@ -1,15 +1,4 @@
-/* 
-This GSAP effect lets you zoom in on a particular spot of the target - you define the scale and the origin as an Array of x/y normalized values. Like {scale: 3, origin: [0.25, 0.8]} would zoom in on the spot that's 25% from the left, and 80% from the top of the element/image. It will return an animation that controls the xPercent, yPercent, and scale (as well as any other values you pass in, like a normal tween). It won't let the edges collapse toward the center. It's best to put the element into a container that has overflow: hidden.
 
-Example: 
-
-gsap.effects.zoom(".photo", {
-  scale: 3,
-  origin: [0.25, 0.8],
-  duration: 1,
-  ease: "power1.inOut"
-});
- */
 gsap.registerEffect({
     name: "zoom",
     effect: (targets, config) => {
@@ -25,6 +14,8 @@ gsap.registerEffect({
     extendTimeline: true,
     defaults: { origin: [0.5, 0.5], scale: 2 }
 });
+
+
 
 // for each section, we define the zoom data here
 const zoomData = [ //kiri, atas

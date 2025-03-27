@@ -1,4 +1,5 @@
 .data {
+    min-height: auto;
     &::after {
         content: "";
         position: absolute;

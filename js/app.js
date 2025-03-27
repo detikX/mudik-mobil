@@ -39,18 +39,25 @@ $(document).ready(function () {
 
 var mobil = $("#show-mobil");
 var ev = $("#show-ev");
+var sembunyi = $(".sembunyi")
 
 
 $(".jalan,.creditx,.hehe").hide();
-mobil.css('display', 'none')
+// sembunyi.css('display', 'none')
+// TweenMax.set($img,{autoAlpha:0,display:"none"});
+// // animate CSS autoAlpha to 1
+// TweenMax.to($img,3, {autoAlpha:1,display:"block"});
 $("#bensin, .dedi-bensin").click(function () {
+    mobil.removeClass('sembunyiin');
     setTimeout(() => {
-        mobil.css('display', '')
+        // mobil.css('display', 'block')
+        // gsap.to(".sembunyiin", { display: "block", opacity: 1 });
         $('html, body').animate({
             scrollTop: mobil.offset().top + 102
         }, 1000);
 
-    }, 500);
+    }, 1000);
+
     ev.fadeOut()
     $(".jalan,.creditx,.hehe").show();
 })
@@ -61,10 +68,11 @@ $("#ev, .dedi-ev").click(function () {
 
         ev.css('display', '')
         $('html, body').animate({
-            scrollTop: ev.offset().top + 102
+            scrollTop: ev.offset().top
         }, 1000);
     }, 500);
-    mobil.fadeOut()
+    // mobil.fadeOut()
+    mobil.addClass('sembunyiin')
     $(".jalan,.creditx,.hehe").show();
     // e.preventDefault
 })

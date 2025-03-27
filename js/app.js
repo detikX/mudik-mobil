@@ -1,6 +1,6 @@
 $(document).ready(function () {
     AOS.init();
-    // new WOW().init();
+    new WOW().init();
 
     // setTimeout(() => {
     //     $(".preloader").slideUp(1000);
@@ -60,7 +60,10 @@ $("#bensin, .dedi-bensin").click(function () {
     }, 1000);
 
     ev.fadeOut()
-    $(".jalan,.creditx,.hehe").show();
+    setTimeout(() => {
+
+        $(".jalan,.creditx,.hehe").show();
+    }, 1000);
 })
 
 ev.css('display', 'none')
@@ -74,6 +77,10 @@ $("#ev, .dedi-ev").click(function () {
     }, 500);
     // mobil.fadeOut()
     mobil.children().removeClass('lol')
-    $(".jalan,.creditx,.hehe").show();
+
+    setTimeout(() => {
+
+        $(".jalan,.creditx,.hehe").show();
+    }, 1000);
     // e.preventDefault
 })

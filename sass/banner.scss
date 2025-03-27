@@ -2,16 +2,15 @@
     // min-height: auto;
     padding: 0;
     @media screen and (max-width: 768px) {
-        min-height: 90vh;
+        // min-height: 90vh;
     }
     .ketupat {
         position: absolute;
-        left: 50%;
-        top: 140%;
+        left: 100%;
+        top: 50%;
         translate: -50% -50%;
         width: 100px;
         height: auto;
-        // filter: drop-shadow(6px 2px 3px white);
         z-index: -1;
         @media screen and (max-width: 768px) {
             translate: initial;
@@ -37,19 +36,19 @@
             height: 100%;
             object-fit: cover;
             @media screen and (max-width: 768px) {
-                object-fit: contain;
+                // object-fit: contain;
             }
         }
     }
     .title {
         position: absolute;
         left: 50%;
-        top: 46%;
+        top: 30%;
         translate: -50% -50%;
         width: 50%;
         // transform: skewX(-20deg);
         // background: rgba($color: #3b925e, $alpha: 0.8);
-        // background: rgba(white, 0.7);
+        background: linear-gradient(45deg, rgba(81, 138, 165, 0.9), rgba(106, 153, 173, 0.6));
         @media screen and (max-width: 768px) {
             // right: initial;
             top: 22%;
@@ -59,17 +58,19 @@
             translate: -50% -50%;
         }
         h2 {
-            font-size: 4.5rem;
+            font-size: 3.5rem;
             // transform: skewX(20deg);
             text-align: center;
-            color: #fff;
+            // color: #fff;
+            color: #007e68;
 
-            text-shadow: 4px 4px #05464c;
+            // text-shadow: 4px 4px #05464c;
             font-family: "Righteous";
             @media screen and (max-width: 768px) {
-                font-size: 2.5rem;
+                font-size: 3.5rem;
                 text-align: center;
-                text-shadow: 2px 2px #05464c;
+                line-height: 3.5rem;
+                // text-shadow: 2px 2px #05464c;
             }
         }
     }

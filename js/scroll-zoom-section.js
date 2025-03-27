@@ -34,7 +34,7 @@ const zoomData = [ //kiri, atas
     // { scale: 1, origin: [0.5, 0.5] },
     // { scale: 1, origin: [0.5, 0.5] }, // roda ban backup 0.8, 1
     // { scale: 1, origin: [0.5, 0.5] },
-
+    { scale: 1, origin: [0.5, 0.5] },
     { scale: 1, origin: [0.5, 0.5] },
     { scale: 3, origin: [0.8, 1] }, // roda ban backup 0.8, 1
     { scale: 1, origin: [0.5, 0.5] },

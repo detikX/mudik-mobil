@@ -478,6 +478,20 @@ section {
     padding: 0 !important;
 }
 
+.ismobile {
+    display: none !important;
+    @media screen and (max-width: 768px) {
+        display: block !important;
+    }
+}
+
+.isdesktop {
+    display: block !important;
+    @media screen and (max-width: 768px) {
+        display: none !important;
+    }
+}
+
 .baca-detikx {
     .bacajuga_box {
         display: initial !important;

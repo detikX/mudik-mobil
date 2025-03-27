@@ -15,28 +15,28 @@
 //         stagger: {
 //             amount: 0.5,
 //         }
-//     })  
+//     })
 
 
-gsap.timeline({
-    scrollTrigger: {
-        trigger: ".box",
-        start: "center center",
-        end: "bottom top",
-        scrub: 1,
-        pin: true
-    }
-})
-    .from(".logo", {
-        y: innerHeight * 1,
-        rotate: 360
-    })
-    .from(".text2", {
-        x: innerWidth * -1
-    })
-    .from(".text1", {
-        x: innerWidth * 1
-    })
-    .from(".text3", {
-        x: innerWidth * 1
-    })
+// gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".box",
+//         start: "center center",
+//         end: "bottom top",
+//         scrub: 1,
+//         pin: true
+//     }
+// })
+//     .from(".logo", {
+//         y: innerHeight * 1,
+//         rotate: 360
+//     })
+//     .from(".text2", {
+//         x: innerWidth * -1
+//     })
+//     .from(".text1", {
+//         x: innerWidth * 1
+//     })
+//     .from(".text3", {
+//         x: innerWidth * 1
+//     })
